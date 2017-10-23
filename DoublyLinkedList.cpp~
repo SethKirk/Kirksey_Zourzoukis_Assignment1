@@ -4,26 +4,26 @@
 #include "LinkedList.h"
 #include "ItemType.h"
 //Constructor
-LinkedList::LinkedList(){
+DoublyLinkedList::DoublyLinkedList(){
   length = 0;
   head = NULL;
 }
 //Destructor
-LinkedList::~LinkedList(){
+DoublyLinkedList::~DoublyLinkedList(){
   makeEmpty();
   delete head;
   delete current;
 }
 //Returns the current length of the list
-int LinkedList::lengthIs() const{
+int DoublyLinkedList::lengthIs() const{
   return length;
 }
 //Sets the current pointer to null
-void LinkedList::resetList(){
+void DoublyLinkedList::resetList(){
   current = NULL;
 }
 
-void LinkedList::insertItem(ItemType &item){
+void DoublyLinkedList::insertItem(ItemType &item){
   NodeType *newNode = new NodeType();
   newNode->info = item;
   prev = NULL;
@@ -63,7 +63,7 @@ void LinkedList::insertItem(ItemType &item){
 }
 
 //Moves current to the next node
-void LinkedList::getNextNode(){
+void DoublyLinkedList::getNextNode(){
   if(current!=NULL)
   {
     current = current->next;
@@ -74,7 +74,7 @@ void LinkedList::getNextNode(){
     current = NULL;
   }
 }
-void LinkedList::getPrevNode(){
+void DoublyLinkedList::getPrevNode(){
   if(current!=NULL)
     {
       current = current->back;
@@ -86,7 +86,7 @@ void LinkedList::getPrevNode(){
     }
 }
 //Prints out the entire, current list
-void LinkedList::print(){
+void DoublyLinkedList::print(){
   int count = 0;
   if(head==NULL)
   {
@@ -104,7 +104,7 @@ void LinkedList::print(){
   std::cout<<""<<std::endl;
 }
 //Returns the node that contains the given item
-LinkedList::NodeType *LinkedList::findNode(ItemType &item){
+DoublyLinkedList::NodeType *DoublyLinkedList::findNode(ItemType &item){
   current = head;
   while(current!=NULL && current->info.compareTo(item)!=RelationType::EQUAL)
   {
@@ -120,7 +120,7 @@ LinkedList::NodeType *LinkedList::findNode(ItemType &item){
   }
 }
 //Deletes the node associated with the given item
-void LinkedList::deleteItem(ItemType &item){
+void DoublyLinkedList::deleteItem(ItemType &item){
   NodeType *find;
   find = findNode(item);
   current = head;
@@ -147,7 +147,7 @@ void LinkedList::deleteItem(ItemType &item){
   length--;
 }
 //Moves the pointer to the next node and prints out said node
-void LinkedList::getNextItem(ItemType &item){
+void DoublyLinkedList::getNextItem(ItemType &item){
   if(length==0)
   {
     std::cout<<"Next Item: List Is Empty"<<std::endl;
@@ -166,7 +166,7 @@ void LinkedList::getNextItem(ItemType &item){
     getNextNode();
   }
 }
-void LinkedList::getPrevItem(ItemType &item){
+void DoublyLinkedList::getPrevItem(ItemType &item){
     if(length==0)
       {
 	std::cout<<"Prev Item: List Is Empty"<<std::endl;

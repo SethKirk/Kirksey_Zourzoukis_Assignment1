@@ -2,12 +2,12 @@
 #include <fstream>
 #include <iostream>
 #include "ItemType.h"
-#include "LinkedList.h"
+#include "DoublyLinkedList.h"
 //main function
 int main(int argc, char *argv[]){
   bool run = true;
   char cinput;
-  LinkedList list;
+  DoublyLinkedList list;
   ItemType item;
   int input;
   //Open File
@@ -79,6 +79,9 @@ int main(int argc, char *argv[]){
       case 'g':
         list.getNextItem(item);
         break;
+      case 'b':
+	list.getPrevItem(item);
+	break;
       default:
         std::cout<<"User Input Not Recognized. Try Again."<<std::endl;   
     }

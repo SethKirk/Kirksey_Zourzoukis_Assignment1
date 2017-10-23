@@ -1,0 +1,16 @@
+Kirksey_Zourzoukis_Assignment1:
+total 228
+-rwxr-xr-x. 1 ugrad    30 Sep 29 16:40 input.txt
+-rwxr-xr-x. 1 ugrad   776 Sep 29 16:40 ItemType.cpp
+-rwxr-xr-x. 1 ugrad   398 Sep 29 16:40 ItemType.h
+-rw-r--r--. 1 ugrad 37280 Sep 29 16:40 ItemType.o
+-rwxr-xr-x. 1 ugrad  3361 Sep 29 16:40 LinkedList.cpp
+-rwxr-xr-x. 1 ugrad   759 Sep 29 16:40 LinkedList.h
+-rw-r--r--. 1 ugrad 46048 Sep 29 16:40 LinkedList.o
+-rwxr-xr-x. 1 ugrad 64846 Sep 29 16:40 main
+-rwxr-xr-x. 1 ugrad  1930 Sep 29 16:40 main.cpp
+-rw-r--r--. 1 ugrad 43400 Sep 29 16:40 main.o
+-rwxr-xr-x. 1 ugrad   484 Sep 29 16:40 makefile
+-rw-r--r--. 1 ugrad   150 Sep 29 16:43 README.md
+-rw-r--r--. 1 ugrad     0 Sep 29 16:46 rec33264
+/home/ugrads/kirksey/Assignment1/Kirksey_Zourzoukis_Assignment1:/home/work/cs2720

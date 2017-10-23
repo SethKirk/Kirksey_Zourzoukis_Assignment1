@@ -4,7 +4,7 @@
 #include <iostream>
 #include "ItemType.h"
 //Linked List Class
-class LinkedList{
+class DoublyLinkedList{
   //Public Members and Functions
   public:
     //NodeType Struct
@@ -13,8 +13,8 @@ class LinkedList{
         NodeType *next;
         NodeType *back;
       };  
-    LinkedList();
-    ~LinkedList();
+    DoublyLinkedList();
+    ~DoublyLinkedList();
     int lengthIs() const;
     void retrieveItem(ItemType &item, bool &found);
     void insertItem(ItemType &item);

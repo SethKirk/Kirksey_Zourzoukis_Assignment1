@@ -4,7 +4,7 @@
 #include <iostream>
 #include "ItemType.h"
 //Linked List Class
-class LinkedList{
+class DoublyLinkedList{
   //Public Members and Functions
   public:
     //NodeType Struct
